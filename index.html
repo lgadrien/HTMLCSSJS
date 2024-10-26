@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css"> // Lien du css dans le dossier css.
-    <script src="https://cdn.tailwindcss.com"></script> // Lien du cdn tailwind a jouter dans chaques heads de chaques fichiers html.
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad & Yayou - Home</title>
+    <link rel="stylesheet" href="./css/index.css"> <!-- Lien du CSS dans le dossier css -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Lien du CDN Tailwind à ajouter dans chaque head de chaque fichier HTML -->
 </head>
 
+<body class="text-gray-800 min-h-screen flex flex-col">
+    <header class="bg-black text-white p-6">
+        <h1 class="text-4xl font-bold">Accueil</h1>
+    </header>
 
-<body>
-    <h1>Home</h1>
-    <p>Welcome to the home page.</p>
+
+    <main class="flex-grow bg-white container mx-auto p-6">
+        <div class="mb-6">
+            <p class="text-lg">Bienvenue sur le site de <span class="font-semibold">Ad & Yayou</span> !</p>
+            <p class="text-lg mt-2">Vous pouvez naviguer sur le site en cliquant sur les liens ci-dessous :</p>
+        </div>
+        <ul class="list-disc list-inside space-y-2">
+            <li><a href="index.html" class="text-blue-500 hover:underline">Page d'accueil</a></li>
+            <li><a href="./components/login.html" class="text-blue-500 hover:underline">Login</a></li>
+            <li><a href="./components/register.html" class="text-blue-500 hover:underline">Register</a></li>
+        </ul>
+    </main>
+
+
+    <footer class="bg-black text-white py-4">
+        <p class="text-center">&copy; 2024 Ad & Yayou</p>
+    </footer>
 </body>
-
-
-<footer>
-    <p>&copy; 2021</p>
-</footer>
-
 
 </html>
